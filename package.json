@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "script": "node scripts/run.js"
+    "script": "node scripts/run.js",
+    "deploy": "yarn hardhat run scripts/deploy.js --network mumbai"
   },
   "author": "vijethx",
   "license": "ISC",
@@ -24,5 +25,8 @@
     "hardhat-gas-reporter": "^1.0.8",
     "solidity-coverage": "^0.7.21",
     "typechain": "^8.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1"
   }
 }
